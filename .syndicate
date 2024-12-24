@@ -1,0 +1,81 @@
+name: sush24
+build_projects_mapping:
+  python: src
+lambdas:
+  hello_world:
+    runtime: python
+events:
+- operation: deploy
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  deploy_name: sush24
+  time_start: '2024-12-24T10:00:26Z'
+  time_end: '2024-12-24T10:00:52Z'
+  duration_sec: 26.003
+  status: succeeded
+  rollback_on_error: false
+- operation: build
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  time_start: '2024-12-24T09:59:53Z'
+  time_end: '2024-12-24T10:00:09Z'
+  duration_sec: 15.248
+- operation: upload
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  time_start: '2024-12-24T10:00:05Z'
+  time_end: '2024-12-24T10:00:09Z'
+  duration_sec: 3.542
+- operation: package_meta
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  time_start: '2024-12-24T10:00:03Z'
+  time_end: '2024-12-24T10:00:03Z'
+  duration_sec: 0.145
+- operation: assemble
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  time_start: '2024-12-24T09:59:56Z'
+  time_end: '2024-12-24T10:00:03Z'
+  duration_sec: 7.786
+- operation: assemble_python
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  time_start: '2024-12-24T09:59:56Z'
+  time_end: '2024-12-24T10:00:03Z'
+  duration_sec: 7.776
+- operation: test
+  initiator: sushant_sikare
+  time_start: '2024-12-24T09:59:55Z'
+  time_end: '2024-12-24T09:59:56Z'
+  duration_sec: 0.436
+- operation: assemble
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095843
+  time_start: '2024-12-24T09:58:47Z'
+  time_end: '2024-12-24T09:58:55Z'
+  duration_sec: 8.146
+- operation: assemble_python
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095843
+  time_start: '2024-12-24T09:58:47Z'
+  time_end: '2024-12-24T09:58:55Z'
+  duration_sec: 8.137
+- operation: test
+  initiator: sushant_sikare
+  time_start: '2024-12-24T09:58:46Z'
+  time_end: '2024-12-24T09:58:47Z'
+  duration_sec: 0.543
+locks:
+  modification_lock:
+    last_modification_date: '2024-12-24T04:30:52Z'
+    is_locked: false
+    initiator: sushant_sikare
+latest_deploy:
+  initiator: sushant_sikare
+  bundle_name: sush24_241224.095952
+  deploy_name: sush24
+  time_start: '2024-12-24T10:00:26Z'
+  time_end: '2024-12-24T10:00:52Z'
+  duration_sec: 26.003
+  is_succeeded: true

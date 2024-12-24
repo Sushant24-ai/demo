@@ -1,0 +1,17 @@
+account_id: '905418349556'
+deploy_target_bucket: syndicate-education-platform-custom-sandbox-artifacts-sbox02/b1f07e8d/task01
+expiration: 2024-12-24 05:17:13.209275+00:00
+extended_prefix_mode: true
+iam_permissions_boundary: arn:aws:iam::905418349556:policy/eo_role_boundary
+project_path: C:\Users\sushant_sikare\Desktop\Sushant\sush24
+region: eu-central-1
+resources_prefix: cmtr-b1f07e8d-
+tags:
+  course_id: SEP_GL_6
+  course_type: stm
+  student_id: b1f07e8d
+  type: student
+temp_aws_access_key_id: ASIA5FTZDTP2KYUPPLJE
+temp_aws_secret_access_key: DlSuqKgB4FjVVT3VhbVKPKMeIXAtyKWkFcURuBLu
+temp_aws_session_token: IQoJb3JpZ2luX2VjEB0aCXVzLWVhc3QtMSJIMEYCIQCtmpZQDd5jwaY7BENIoTcOiEZEWcWBN51E5gj9x+aJEAIhAKR7ZaZexlT0n45wJYQx2le28rtB9dgwPm/gXn65/G+VKugCCOb//////////wEQABoMOTA1NDE4MzQ5NTU2Igz+EbvFnXUsVG4FOZwqvAJz6YNdI3FwWqHvb7pkXt2/X+JSd+fCz5NQWDwFn3MM0USMBlZaaWUYUCwbWM1b7LDi7+8tENpb0shoVG7VelhuyhvTw/Pz/+oADP2ZXxuF32nIyPqYGP+hX5bGlhZhA2aRFjNDN9WlAf6h2vOJF6L0CsF/VFOu81Y9rOBH4oMywFYZfYpTXWHzift64r5dvWT/oE4Ps3MzQtVuMWv/oNSxH6kgPe55RvYoE//kM8/pkmce1/r8bsbvUNBNhBXEUJ1AQjd2QbkhzHv/J4kHX2LIFfXzDZJvBPistdN19L21c9RpeQIBokYbwN1j9BkZ+A7yb+WuqUWWEygoEbASpqrtTTGkgQEFylKizs6vOLBWWLpPA8SJ5rffn4uSBS120K2Fx8/OgtodmFhtwlh8HmM4pesGZGensgHAYJiWMOHvqLsGOpwBuv3n+Iw545FxVzs1AL1zCdfR5mxC7ztLRaMHHU9f17zZVhntmZNcNB06W+WFJngSG2+uNOx5WOhcIeY3PpaZnXuuTa4U3HW89mmEzJNC/fCIuxa8ZyulC5n1bQShsug3pSryAD4wIdCe6z8gpMC70TIFJsZhr5YLzFdgzaQdUomRIDdYE5W/0CAsDfRG1N71BzcwxMvBhq0+ahjT
+use_temp_creds: false

@@ -1,0 +1,128 @@
+2024-12-24 09:58:10,799 [WARNING] USER:sushant_sikare __init__.py:190:initialize_project_state LOG: [93mConfig is set and generated but project state does not exist, seems that you've come from the previous version.[0m
+2024-12-24 09:58:10,800 [WARNING] USER:sushant_sikare __init__.py:193:initialize_project_state LOG: [93mGenerating project state file (.syndicate) from the existing structure...[0m
+2024-12-24 09:58:10,806 [INFO] USER:sushant_sikare helper.py:588:check_lambda_name LOG: Validating lambda name: 'hello_world'
+2024-12-24 09:58:10,806 [INFO] USER:sushant_sikare helper.py:603:check_lambda_name LOG: Lambda name: 'hello_world' passed the validation
+2024-12-24 09:58:10,828 [INFO] USER:sushant_sikare helper.py:577:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2024-12-24 09:58:10,828 [INFO] USER:sushant_sikare helper.py:581:resolve_project_path LOG: Path: 'C:/Users/sushant_sikare/Desktop/Sushant/sush24' was assigned to the parameter: 'project_path'
+2024-12-24 09:58:10,848 [INFO] USER:sushant_sikare lambda_function.py:229:_generate_python_lambdas LOG: Lambdas path: C:/Users/sushant_sikare/Desktop/Sushant/sush24\src\lambdas
+2024-12-24 09:58:10,861 [INFO] USER:sushant_sikare lambda_function.py:276:_generate_python_lambdas LOG: Lambda hello_world created
+2024-12-24 09:58:10,867 [INFO] USER:sushant_sikare lambda_function.py:168:generate_lambda_function LOG: Lambda hello_world has been successfully added to the project.
+2024-12-24 09:58:10,868 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage lambda_function, elapsed time: 0:00:00.039193
+2024-12-24 09:58:43,274 [INFO] USER:sushant_sikare processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2024-12-24 09:58:47,389 [INFO] USER:sushant_sikare handlers.py:176:test LOG: 
+test_success (test_hello_world.test_success.TestSuccess.test_success) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+----------------------------------------------------------------------
+2024-12-24 09:58:47,390 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage test, elapsed time: 0:00:00.543288
+2024-12-24 09:58:47,398 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\jsrc\main\java\com\sush24.
+2024-12-24 09:58:47,399 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\src\lambdas.
+2024-12-24 09:58:47,401 [INFO] USER:sushant_sikare project_state.py:392:_update_lambdas_from_path LOG: Going to add the following 'python' lambda:'hello_world' to the pending ProjectState.
+2024-12-24 09:58:47,401 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\app\lambdas.
+2024-12-24 09:58:47,401 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\dnapp\lambdas.
+2024-12-24 09:58:47,401 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\swagger_src.
+2024-12-24 09:58:47,405 [INFO] USER:sushant_sikare python.py:59:assemble_python_lambdas LOG: Going to process python project by path: C:/Users/sushant_sikare/Desktop/Sushant/sush24/src
+2024-12-24 09:58:47,407 [INFO] USER:sushant_sikare python.py:66:assemble_python_lambdas LOG: Going to build artifact in: C:/Users/sushant_sikare/Desktop/Sushant/sush24/src\lambdas\hello_world
+2024-12-24 09:58:47,408 [INFO] USER:sushant_sikare python.py:141:_build_python_artifact LOG: Building artifact in C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev/bundles/sush24_241224.095843
+2024-12-24 09:58:47,409 [INFO] USER:sushant_sikare python.py:149:_build_python_artifact LOG: Artifacts path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095843\hello_world-1.0
+2024-12-24 09:58:47,409 [INFO] USER:sushant_sikare python.py:235:install_requirements_to LOG: Going to install 3-rd party dependencies
+2024-12-24 09:58:50,196 [INFO] USER:sushant_sikare python.py:248:install_requirements_to LOG: 
+
+
+2024-12-24 09:58:50,196 [INFO] USER:sushant_sikare python.py:310:install_requirements_to LOG: 3-rd party dependencies were installed successfully
+2024-12-24 09:58:50,196 [INFO] USER:sushant_sikare python.py:162:_build_python_artifact LOG: Going to install local dependencies
+2024-12-24 09:58:50,197 [INFO] USER:sushant_sikare python.py:424:_install_local_req LOG: Installing local dependencies: ['commons']
+2024-12-24 09:58:50,197 [INFO] USER:sushant_sikare python.py:427:_install_local_req LOG: Processing local dependency: commons
+2024-12-24 09:58:55,520 [INFO] USER:sushant_sikare python.py:165:_build_python_artifact LOG: Local dependencies were installed successfully
+2024-12-24 09:58:55,522 [INFO] USER:sushant_sikare python.py:179:_build_python_artifact LOG: Copying lambda's handler from C:\Users\sushant_sikare\Desktop\Sushant\sush24\src\lambdas\hello_world to C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095843\hello_world-1.0
+2024-12-24 09:58:55,528 [INFO] USER:sushant_sikare python.py:185:_build_python_artifact LOG: Packaging artifacts by C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095843\hello_world-1.0 to hello_world-1.0.zip
+2024-12-24 09:58:55,535 [INFO] USER:sushant_sikare python.py:187:_build_python_artifact LOG: Package 'hello_world-1.0.zip' was successfully created
+2024-12-24 09:58:55,535 [INFO] USER:sushant_sikare helper.py:62:remove_dir LOG: Trying to remove "C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095843\hello_world-1.0"
+2024-12-24 09:58:55,539 [INFO] USER:sushant_sikare python.py:191:_build_python_artifact LOG: "C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095843\hello_world-1.0" was removed successfully
+2024-12-24 09:58:55,540 [INFO] USER:sushant_sikare python.py:92:assemble_python_lambdas LOG: Python project was processed successfully
+2024-12-24 09:58:55,541 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage assemble_python, elapsed time: 0:00:08.137100
+2024-12-24 09:58:55,544 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage assemble_python, elapsed time: 0:00:08.139769
+2024-12-24 09:58:55,544 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage assemble, elapsed time: 0:00:08.145657
+2024-12-24 09:58:55,547 [INFO] USER:sushant_sikare meta_processor.py:507:create_meta LOG: Bundle path: C:/Users/sushant_sikare/Desktop/Sushant/sush24/bundles/sush24_241224.095843
+2024-12-24 09:59:52,357 [INFO] USER:sushant_sikare processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2024-12-24 09:59:56,034 [INFO] USER:sushant_sikare handlers.py:176:test LOG: 
+test_success (test_hello_world.test_success.TestSuccess.test_success) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+----------------------------------------------------------------------
+2024-12-24 09:59:56,035 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage test, elapsed time: 0:00:00.436086
+2024-12-24 09:59:56,041 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\jsrc\main\java\com\sush24.
+2024-12-24 09:59:56,041 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\src\lambdas.
+2024-12-24 09:59:56,043 [INFO] USER:sushant_sikare project_state.py:392:_update_lambdas_from_path LOG: Going to add the following 'python' lambda:'hello_world' to the pending ProjectState.
+2024-12-24 09:59:56,043 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\app\lambdas.
+2024-12-24 09:59:56,043 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\dnapp\lambdas.
+2024-12-24 09:59:56,044 [INFO] USER:sushant_sikare project_state.py:388:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\swagger_src.
+2024-12-24 09:59:56,047 [INFO] USER:sushant_sikare python.py:59:assemble_python_lambdas LOG: Going to process python project by path: C:/Users/sushant_sikare/Desktop/Sushant/sush24/src
+2024-12-24 09:59:56,048 [INFO] USER:sushant_sikare python.py:66:assemble_python_lambdas LOG: Going to build artifact in: C:/Users/sushant_sikare/Desktop/Sushant/sush24/src\lambdas\hello_world
+2024-12-24 09:59:56,050 [INFO] USER:sushant_sikare python.py:141:_build_python_artifact LOG: Building artifact in C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev/bundles/sush24_241224.095952
+2024-12-24 09:59:56,050 [INFO] USER:sushant_sikare python.py:149:_build_python_artifact LOG: Artifacts path: C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095952\hello_world-1.0
+2024-12-24 09:59:56,051 [INFO] USER:sushant_sikare python.py:235:install_requirements_to LOG: Going to install 3-rd party dependencies
+2024-12-24 09:59:58,623 [INFO] USER:sushant_sikare python.py:248:install_requirements_to LOG: 
+
+
+2024-12-24 09:59:58,623 [INFO] USER:sushant_sikare python.py:310:install_requirements_to LOG: 3-rd party dependencies were installed successfully
+2024-12-24 09:59:58,623 [INFO] USER:sushant_sikare python.py:162:_build_python_artifact LOG: Going to install local dependencies
+2024-12-24 09:59:58,623 [INFO] USER:sushant_sikare python.py:424:_install_local_req LOG: Installing local dependencies: ['commons']
+2024-12-24 09:59:58,623 [INFO] USER:sushant_sikare python.py:427:_install_local_req LOG: Processing local dependency: commons
+2024-12-24 10:00:03,793 [INFO] USER:sushant_sikare python.py:165:_build_python_artifact LOG: Local dependencies were installed successfully
+2024-12-24 10:00:03,795 [INFO] USER:sushant_sikare python.py:179:_build_python_artifact LOG: Copying lambda's handler from C:\Users\sushant_sikare\Desktop\Sushant\sush24\src\lambdas\hello_world to C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095952\hello_world-1.0
+2024-12-24 10:00:03,803 [INFO] USER:sushant_sikare python.py:185:_build_python_artifact LOG: Packaging artifacts by C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095952\hello_world-1.0 to hello_world-1.0.zip
+2024-12-24 10:00:03,814 [INFO] USER:sushant_sikare python.py:187:_build_python_artifact LOG: Package 'hello_world-1.0.zip' was successfully created
+2024-12-24 10:00:03,815 [INFO] USER:sushant_sikare helper.py:62:remove_dir LOG: Trying to remove "C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095952\hello_world-1.0"
+2024-12-24 10:00:03,820 [INFO] USER:sushant_sikare python.py:191:_build_python_artifact LOG: "C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev\bundles\sush24_241224.095952\hello_world-1.0" was removed successfully
+2024-12-24 10:00:03,821 [INFO] USER:sushant_sikare python.py:92:assemble_python_lambdas LOG: Python project was processed successfully
+2024-12-24 10:00:03,822 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage assemble_python, elapsed time: 0:00:07.776264
+2024-12-24 10:00:03,826 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage assemble_python, elapsed time: 0:00:07.780418
+2024-12-24 10:00:03,827 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage assemble, elapsed time: 0:00:07.786314
+2024-12-24 10:00:03,830 [INFO] USER:sushant_sikare meta_processor.py:507:create_meta LOG: Bundle path: C:/Users/sushant_sikare/Desktop/Sushant/sush24/bundles/sush24_241224.095952
+2024-12-24 10:00:03,974 [INFO] USER:sushant_sikare helper.py:292:write_content_to_file LOG: C:\Users\sushant_sikare\Desktop\Sushant\sush24\.syndicate-config-dev/bundles/sush24_241224.095952\build_meta.json file was created.
+2024-12-24 10:00:03,975 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage package_meta, elapsed time: 0:00:00.145158
+2024-12-24 10:00:07,391 [INFO] USER:sushant_sikare bundle_processor.py:214:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2024-12-24 10:00:09,030 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage upload, elapsed time: 0:00:03.541807
+2024-12-24 10:00:09,037 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage build, elapsed time: 0:00:15.247711
+2024-12-24 10:00:19,349 [INFO] USER:sushant_sikare processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2024-12-24 10:00:21,829 [INFO] USER:sushant_sikare sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-12-24 10:00:21,829 [INFO] USER:sushant_sikare helper.py:233:resolve_default_value LOG: Resolved value of deploy_name: sush24
+2024-12-24 10:00:22,316 [INFO] USER:sushant_sikare project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-12-24 10:00:22,316 [INFO] USER:sushant_sikare project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-12-24 10:00:22,955 [INFO] USER:sushant_sikare sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-12-24 10:00:22,955 [INFO] USER:sushant_sikare helper.py:233:resolve_default_value LOG: Resolved value of bundle_name: sush24_241224.095952
+2024-12-24 10:00:23,575 [INFO] USER:sushant_sikare project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-12-24 10:00:23,575 [INFO] USER:sushant_sikare project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-12-24 10:00:24,082 [INFO] USER:sushant_sikare sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-12-24 10:00:24,699 [INFO] USER:sushant_sikare project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-12-24 10:00:24,699 [INFO] USER:sushant_sikare project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-12-24 10:00:25,311 [INFO] USER:sushant_sikare sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-12-24 10:00:27,768 [INFO] USER:sushant_sikare deployment_processor.py:443:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved.
+2024-12-24 10:00:27,768 [INFO] USER:sushant_sikare deployment_processor.py:466:create_deployment_resources LOG: Going to deploy AWS resources
+2024-12-24 10:00:28,059 [INFO] USER:sushant_sikare deployment_processor.py:67:_process_resources LOG: Processing iam_policy resources
+2024-12-24 10:00:31,246 [INFO] USER:sushant_sikare iam_resource.py:120:_create_policy_from_meta LOG: Created IAM policy cmtr-b1f07e8d-lambda-basic-execution.
+2024-12-24 10:00:31,640 [INFO] USER:sushant_sikare deployment_processor.py:67:_process_resources LOG: Processing iam_role resources
+2024-12-24 10:00:41,081 [INFO] USER:sushant_sikare iam_resource.py:183:_create_role_from_meta LOG: Created IAM role cmtr-b1f07e8d-hello_world-role.
+2024-12-24 10:00:41,083 [INFO] USER:sushant_sikare deployment_processor.py:81:_process_resources LOG: Processing lambda resources
+2024-12-24 10:00:49,373 [INFO] USER:sushant_sikare lambda_resource.py:1388:_resolve_log_group LOG: Cloud Watch log group for lambda: cmtr-b1f07e8d-hello_world does not exists. Creating new log group with name: aws/lambda/cmtr-b1f07e8d-hello_world
+2024-12-24 10:00:50,987 [INFO] USER:sushant_sikare deployment_processor.py:520:create_deployment_resources LOG: AWS resources were deployed successfully
+2024-12-24 10:00:50,988 [INFO] USER:sushant_sikare deployment_processor.py:523:create_deployment_resources LOG: Going to apply dynamic changes
+2024-12-24 10:00:50,989 [INFO] USER:sushant_sikare deployment_processor.py:525:create_deployment_resources LOG: Dynamic changes were applied successfully
+2024-12-24 10:00:50,990 [INFO] USER:sushant_sikare deployment_processor.py:527:create_deployment_resources LOG: Going to apply post deployment tags
+2024-12-24 10:00:51,000 [INFO] USER:sushant_sikare group_tagging_api_resource.py:87:apply_tags LOG: Tags were successfully applied.
+2024-12-24 10:00:51,000 [INFO] USER:sushant_sikare deployment_processor.py:530:create_deployment_resources LOG: Going to create deploy output
+2024-12-24 10:00:52,958 [INFO] USER:sushant_sikare bundle_processor.py:66:create_deploy_output LOG: Output file with name sush24_241224.095952/outputs/sush24.json has been created
+2024-12-24 10:00:52,958 [INFO] USER:sushant_sikare deployment_processor.py:540:create_deployment_resources LOG: Deploy output for sush24 was created.
+2024-12-24 10:00:52,960 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage deploy, elapsed time: 0:00:26.002926
+2024-12-24 10:00:53,476 [INFO] USER:sushant_sikare project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2024-12-24 10:00:53,477 [INFO] USER:sushant_sikare project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2024-12-24 10:00:54,058 [INFO] USER:sushant_sikare sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
