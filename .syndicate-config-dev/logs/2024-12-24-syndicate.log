@@ -126,3 +126,17 @@ OK
 2024-12-24 10:00:53,476 [INFO] USER:sushant_sikare project_state.py:121:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
 2024-12-24 10:00:53,477 [INFO] USER:sushant_sikare project_state.py:126:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
 2024-12-24 10:00:54,058 [INFO] USER:sushant_sikare sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2024-12-24 11:06:28,197 [INFO] USER:sushant_sikare project.py:77:generate_project_structure LOG: Project task02 folder has been successfully created.
+2024-12-24 11:06:28,198 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage project, elapsed time: 0:00:00.007854
+2024-12-24 11:07:55,577 [INFO] USER:sushant_sikare s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox02'
+2024-12-24 11:07:55,577 [INFO] USER:sushant_sikare s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox02'
+2024-12-24 11:07:55,577 [INFO] USER:sushant_sikare helper.py:515:convert LOG: Stripping course_id:SEP_GL_6,course_type:stm,student_id:b1f07e8d,type:student from "," a bit..
+2024-12-24 11:07:55,577 [INFO] USER:sushant_sikare helper.py:519:convert LOG: Converting: course_id:SEP_GL_6,course_type:stm,student_id:b1f07e8d,type:student to dict..
+2024-12-24 11:07:55,577 [INFO] USER:sushant_sikare helper.py:531:convert LOG: Converted to such a dict: {'course_id': 'SEP_GL_6', 'course_type': 'stm', 'student_id': 'b1f07e8d', 'type': 'student'}
+2024-12-24 11:07:57,958 [WARNING] USER:sushant_sikare generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2024-12-24 11:07:57,959 [WARNING] USER:sushant_sikare generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\sushant_sikare\Desktop\Sushant\sush24\task02\.syndicate-config-dev
+2024-12-24 11:07:57,964 [INFO] USER:sushant_sikare generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\sushant_sikare\Desktop\Sushant\sush24\task02\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\sushant_sikare\Desktop\Sushant\sush24\task02\.syndicate-config-dev
+2024-12-24 11:07:57,967 [INFO] USER:sushant_sikare helper.py:329:timed LOG: Stage config, elapsed time: 0:00:02.389997
