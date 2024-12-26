@@ -1,15 +1,13 @@
 import unittest
 from src.lambdas.hello_world.handler import HelloWorld, lambda_handler
 
+
 class TestSuccess(unittest.TestCase):
     def setUp(self):
-        # Set up a HelloWorld instance for testing
         self.handler = HelloWorld()
 
     def test_success(self):
-        """
-        Test that a valid GET request to '/hello' returns the correct response.
-        """
+        # Simulate a valid /hello GET request
         event = {
             "rawPath": "/hello",
             "requestContext": {
@@ -26,9 +24,7 @@ class TestSuccess(unittest.TestCase):
         self.assertEqual(self.handler.handle_request(event, context), expected_response)
 
     def test_bad_request(self):
-        """
-        Test that an invalid request (wrong path or method) returns a 400 response.
-        """
+        # Simulate an unsupported path and method
         event = {
             "rawPath": "/invalid",
             "requestContext": {
@@ -45,9 +41,7 @@ class TestSuccess(unittest.TestCase):
         self.assertEqual(self.handler.handle_request(event, context), expected_response)
 
     def test_lambda_handler_success(self):
-        """
-        Test the AWS Lambda entry point with a valid event.
-        """
+        # Test the lambda_handler with a valid request
         event = {
             "rawPath": "/hello",
             "requestContext": {
@@ -64,9 +58,7 @@ class TestSuccess(unittest.TestCase):
         self.assertEqual(lambda_handler(event, context), expected_response)
 
     def test_lambda_handler_bad_request(self):
-        """
-        Test the AWS Lambda entry point with an invalid event.
-        """
+        # Test the lambda_handler with an unsupported request
         event = {
             "rawPath": "/unknown",
             "requestContext": {
