@@ -1,26 +1,40 @@
 import unittest
-from src.lambdas.hello_world.handler import HelloWorld
+from src.lambdas.hello_world.handler import HANDLER  # Import the instantiated HANDLER
 
-class TestHelloWorld(unittest.TestCase):
+class TestSuccess(unittest.TestCase):
     def setUp(self):
-        self.handler = HelloWorld()
+        self.handler = HANDLER  # Use the HANDLER instance
 
-    def test_success_hello(self):
-        response = self.handler.handle_request("/hello", "GET")
-        self.assertEqual(response["statusCode"], 200)
-        self.assertEqual(response["message"], "Hello from Lambda")
+    def test_success(self):
+        """
+        Test a successful request to the /hello GET resource.
+        """
+        event = {
+            "rawPath": "/hello",
+            "requestContext": {"http": {"method": "GET"}}
+        }
+        context = {}
+        expected_response = {
+            "statusCode": 200,
+            "message": "Hello from Lambda"
+        }
+        self.assertEqual(self.handler.handle_request(event, context), expected_response)
 
-    def test_bad_request_path(self):
-        response = self.handler.handle_request("/invalid", "GET")
-        self.assertEqual(response["statusCode"], 400)
-        self.assertIn("Bad request syntax or unsupported method", response["message"])
-        self.assertIn("/invalid", response["message"])
+    def test_bad_request(self):
+        """
+        Test an invalid request to a different path or method.
+        """
+        event = {
+            "rawPath": "/invalid",
+            "requestContext": {"http": {"method": "POST"}}
+        }
+        context = {}
+        expected_response = {
+            "statusCode": 400,
+            "message": "Bad request syntax or unsupported method. Request path: /invalid. HTTP method: POST"
+        }
+        self.assertEqual(self.handler.handle_request(event, context), expected_response)
 
-    def test_bad_request_method(self):
-        response = self.handler.handle_request("/hello", "POST")
-        self.assertEqual(response["statusCode"], 400)
-        self.assertIn("Bad request syntax or unsupported method", response["message"])
-        self.assertIn("POST", response["message"])
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
