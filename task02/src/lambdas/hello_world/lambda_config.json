@@ -13,7 +13,19 @@
   "env_variables": {},
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
-  "url_config": {},
+  "url_config": {
+        "auth_type": "NONE",
+        "cors": {
+            "allow_credentials": true,
+            "allow_headers": ["string"],
+            "allow_methods": ["string"],
+            "allow_origins": ["string"],
+            "expose_headers": ["string"],
+            "max_age": 123
+        },
+        "principal": "string",
+        "source_arn": "string"
+  },
   "ephemeral_storage": 512,
   "logs_expiration": "${logs_expiration}",
   "tags": {}
