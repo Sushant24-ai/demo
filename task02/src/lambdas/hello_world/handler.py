@@ -28,5 +28,17 @@ class HelloWorld:
         }
 
 
-# Instantiate the handler object
-HANDLER = HelloWorld()
+# AWS Lambda entry point
+def lambda_handler(event, context):
+    """
+    AWS Lambda entry point to invoke the HelloWorld class.
+
+    Args:
+        event (dict): The input event from API Gateway or Lambda URL.
+        context (dict): The Lambda execution context.
+
+    Returns:
+        dict: Response object returned by the HelloWorld handler.
+    """
+    handler = HelloWorld()
+    return handler.handle_request(event, context)
