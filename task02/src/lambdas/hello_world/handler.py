@@ -10,30 +10,26 @@ class HelloWorld:
         """
         Handles incoming requests and returns the appropriate response.
         """
-        # Extract path and method from the event based on the Lambda Function URL format
+        # Ensure we fetch the correct fields from the event
         path = event.get("rawPath", "")
         method = event.get("httpMethod", "")
 
         logger.info(f"Handling request: path={path}, method={method}")
 
-        # Check if the request matches the /hello GET endpoint
+        # Correctly respond to /hello with GET method
         if path == "/hello" and method == "GET":
-            response = {
+            return {
                 "statusCode": 200,
-                "body": json.dumps({
-                    "message": "Hello from Lambda"
-                })
-            }
-        else:
-            response = {
-                "statusCode": 400,
-                "body": json.dumps({
-                    "message": f"Bad request syntax or unsupported method. Request path: {path}. HTTP method: {method}"
-                })
+                "body": json.dumps({"message": "Hello from Lambda"})
             }
 
-        logger.info(f"Response: {response}")
-        return response
+        # Default response for unsupported paths or methods
+        return {
+            "statusCode": 400,
+            "body": json.dumps({
+                "message": f"Bad request syntax or unsupported method. Request path: {path}. HTTP method: {method}"
+            })
+        }
 
 
 def lambda_handler(event, context):
