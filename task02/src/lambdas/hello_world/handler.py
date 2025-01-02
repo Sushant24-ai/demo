@@ -1,14 +1,19 @@
 import json
 import logging
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+# Set up basic logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class HelloWorld:
     def handle_request(self, event, context):
-        path = event.get("path")
-        method = event.get("httpMethod")
-        
+        """
+        Handles incoming requests and returns the appropriate response.
+        """
+        # Extract path and method from the event based on the Lambda Function URL format
+        path = event.get("rawPath", "")
+        method = event.get("httpMethod", "")
+
         logger.info(f"Handling request: path={path}, method={method}")
 
         # Check if the request matches the /hello GET endpoint
@@ -29,6 +34,7 @@ class HelloWorld:
 
         logger.info(f"Response: {response}")
         return response
+
 
 def lambda_handler(event, context):
     """
